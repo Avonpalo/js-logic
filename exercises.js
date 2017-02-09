@@ -134,7 +134,10 @@ console.log(bigBird("cat"));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+  if (first === second);
 
+}
 /*
  * #7
  * Function - notEqual
@@ -189,6 +192,15 @@ console.log(bigBird("cat"));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if (num%2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(evenStevens(3));
 
 /*
  * #11
@@ -217,6 +229,16 @@ console.log(bigBird("cat"));
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis){
+  if (credits >= 120 || thesis === true){
+    return "Congratulations on a job well done.";
+  }else{
+    return "See you in summer school.";
+  }
+}
+
+var gradResults = graduation(120, false);
+console.log(gradResults);
 
 /*
  * #13
@@ -245,6 +267,20 @@ console.log(bigBird("cat"));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 30;
+var doughnutPrice = 5;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+  if (budget >= doughnutPrice){
+    budget = budget - doughnutPrice;
+    doughnutBought++;
+  }
+}
+
+buyDoughnut();
+console.log(budget);
+console.log(doughnutBought);
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
