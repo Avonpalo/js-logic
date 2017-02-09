@@ -274,6 +274,10 @@ var doughnutBought = 0;
 function buyDoughnut(){
   if (budget >= doughnutPrice){
     budget = budget - doughnutPrice;
+    /**
+    budget -= doughnutPrice; <--this does the same thing as: budget = budget - doughnutPrice
+    **/
+
     doughnutBought++;
   }
 }
@@ -332,6 +336,17 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [1, 5, 2, 3, 7];
+var total = 0;
+
+function sumItUp(arr){
+  for(var i = 0; i < arr.length; i++){
+    total += arr[i]; // total = total + arr[i];
+  }
+  return total;
+}
+
+console.log(sumItUp(numArray));
 
 /*
  * #18
