@@ -33,10 +33,11 @@ if(today === "Friday"){
 function canVote(age){
   if (age >= 18){
     return true;
-  }
+  }else 
+  return false;
 }
 
-console.log(canVote(20));
+console.log(canVote(17));
 
 
 /*
@@ -92,6 +93,13 @@ console.log(isGreaterThan(3, 1));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if (boo === true){
+    return true;
+  }
+}
+
+console.log(mustBeTrue(true));
 
 /*
  * #5
@@ -105,6 +113,13 @@ console.log(isGreaterThan(3, 1));
  * Console.log your result.
 */
 
+function bigBird(word){
+  if (word.length === 3){
+    return "Word to Big Bird!";
+  }
+}
+
+console.log(bigBird("cat"));
 
 /*
  * #6
