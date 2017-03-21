@@ -33,6 +33,18 @@ if(today === "Friday"){
 function canVote(age){
   if (age >= 18){
     return true;
+  }else{
+    return false;
+  }
+}      
+
+var ifCan = canVote(19);
+console.log(ifCan);
+
+/*
+function canVote(age){
+  if (age >= 18){
+    return true;
   }else 
   return false;
 }
@@ -52,6 +64,15 @@ console.log(canVote(17));
  * Console.log your result.
 */
 
+function login(password){
+  if (password === "test1234"){
+  return "Login Success!";
+  }
+}
+
+console.log(login("test1234"));
+
+/*
 function login(password){
   if (password === "test1234"){
     return "Login Success!";
@@ -79,6 +100,15 @@ function isGreaterThan(first, second){
   }
 }
 
+console.log(isGreaterThan(5, 2));
+
+/*
+function isGreaterThan(first, second){
+  if (first > second){
+    return true;
+  }
+}
+
 console.log(isGreaterThan(3, 1));
 
 /*
@@ -93,6 +123,15 @@ console.log(isGreaterThan(3, 1));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if (boo === "ohayo"){
+    return true;
+  }
+}
+
+console.log(mustBeTrue("ohayo"));
+
+/*
 function mustBeTrue(boo){
   if (boo === true){
     return true;
@@ -119,6 +158,15 @@ function bigBird(word){
   }
 }
 
+console.log(bigBird("who"));
+
+/*
+function bigBird(word){
+  if (word.length === 3){
+    return "Word to Big Bird!";
+  }
+}
+
 console.log(bigBird("cat"));
 
 /*
@@ -134,6 +182,17 @@ console.log(bigBird("cat"));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+  if (first = second){
+    return "You look mahvelous!";
+  }else{
+    return "I don't know who you are anymore.";
+  }
+}
+
+console.log(isEqual("not", "who"));
+
+/*
 function isEqual(first, second){
   if (first === second);
 
@@ -151,6 +210,15 @@ function isEqual(first, second){
  * Console.log your result.
 */
 
+function notEqual(first, second){
+  if (first !== second){
+    return "Opposites do attract.";
+  }else{
+    return "Cause it's like you're my mirror.";
+  }
+}
+
+console.log(notEqual("do", "do"));
 
 /*
  * #8
@@ -164,6 +232,15 @@ function isEqual(first, second){
  * Console.log your result.
 */ 
 
+function spareChange(money){
+  if (money > 100){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(spareChange(99));
 
 /*
  * #9
@@ -179,6 +256,15 @@ function isEqual(first, second){
  * Console.log your result.
 */ 
 
+function dirty30(one, two, three){
+  if ((one + two + three) > 30){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(dirty30(10, 5, 10));
 
 /*
  * #10
@@ -192,6 +278,17 @@ function isEqual(first, second){
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if (num%2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(evenStevens(4));
+
+/*
 function evenStevens(num){
   if (num%2 === 0){
     return true;
@@ -215,6 +312,15 @@ console.log(evenStevens(3));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+  if ((cover && age) >= 21){
+    return "Welcome to the Legends Lounge.";
+  }else{
+    return "Chuck E. Cheese is across the street.";
+  }
+}
+
+console.log(daClub(5, 12));
 
 /*
  * #12
@@ -229,6 +335,17 @@ console.log(evenStevens(3));
  * Console.log your result.
 */ 
 
+function graduation(credit, thesis){
+  if ((credit >= 120) || (thesis === true)){
+    return "Congratulations on a job well done.";
+  }else{
+    return "See you in summer school.";
+  }
+}
+
+console.log(graduation(110, true));
+
+/*
 function graduation(credits, thesis){
   if (credits >= 120 || thesis === true){
     return "Congratulations on a job well done.";
@@ -252,6 +369,17 @@ console.log(gradResults);
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+  if (speed < 50){
+    return "You are riding Honolulu's Rail.";
+  }else if (speed < 100){
+    return "You are riding an Amtrak.";
+  }else if (speed > 100){
+    return "Now you ballin' in the Shinkansen!";
+  }
+}
+
+console.log(moneyTrain(105));
 
 /*
  * #14
@@ -267,6 +395,22 @@ console.log(gradResults);
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 35;
+var doughnutPrice = 1;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+  if (budget >= doughnutPrice){
+    budget = budget - doughnutPrice;
+    doughnutBought++;
+  }
+}
+
+ buyDoughnut();
+ console.log(budget);
+ console.log(doughnutBought);
+
+/*
 var budget = 30;
 var doughnutPrice = 5;
 var doughnutBought = 0;
@@ -278,6 +422,8 @@ function buyDoughnut(){
     budget -= doughnutPrice; <--this does the same thing as: budget = budget - doughnutPrice
     **/
 
+
+/*
     doughnutBought++;
   }
 }
@@ -296,6 +442,8 @@ The for loop is made up for 3 parts:
 3) Update (i.e. i++)
 */
 
+
+/*
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
 for (var i = 0; i<toyotaModels.length; i++){
@@ -313,6 +461,11 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var players = ["Linda", "Rod", "Scott", "Susan", "Pearl"];
+
+for (var i = 0; i < players.length; i++){
+  console.log(players[i]);
+}
 
 /* 
  * #16
@@ -320,6 +473,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var i = 0; i < myFavFoods.length; i++){
+  console.log(myFavFoods[i]);
+}
 
 /*
  * #17
@@ -336,12 +492,25 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+var numArray = [1, 2, 15, 41, 5];
+var total = 0;
+
+function sumItUp(arr){
+  for (var i = 0; i < numArray.length; i++){
+    total = total + arr[i];
+  }
+  return total;
+}
+
+console.log(sumItUp(numArray));
+
+/*
 var numArray = [1, 5, 2, 3, 7];
 var total = 0;
 
 function sumItUp(arr){
   for(var i = 0; i < arr.length; i++){
-    total += arr[i]; // total = total + arr[i];
+    total += arr[i]; // <-- this is the same as: total = total + arr[i];
   }
   return total;
 }
@@ -360,9 +529,53 @@ console.log(sumItUp(numArray));
  * Console.log both the east and west arrays.
 */ 
 
+
+var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
+  var east = [];
+  var west = [];
+
+function allStars(ballers){
+  for (var i = 0; i < ballers.length; i++){
+    if (i%2 === 0){
+      east.push(ballers[i]);
+    }else{
+      west.push(ballers[i]);
+    }
+    }
+}
+
+
+var newTeam = allStars(players);
+console.log(newTeam); 
+
+console.log(players);
+console.log(east);
+console.log(west);
+
+/*
+ var a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    b = [];
+ 
+for (var i = 0; i < a.length; ++i) { 
+    if ((a[i] % 2) === 0) {
+        b.push(a[i]);
+    }
+}
+ console.log(b);
+
+/*
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
+function allStars(ballers){
+  for(var i = 0; i < ballers.length; i++){
+    if(i%2 === 0){
+      east.push(ballers[i]);
+    }
+  }
+}
+
+console.log(east);
 
 /*
  * #19
@@ -376,10 +589,44 @@ console.log(sumItUp(numArray));
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+
+function subways(special){
+  for (i = 0; i < special.length; i++);
+    if(i%2 === 1){
+      special.splice([i], 1, "Classic Tuna");
+    }
+}
+
+
+var newSub = subways(subOftheDay);
+console.log(newSub);
+console.log(subOftheDay);
 
 /*
+string.replace(searchvalue, newvalue)
+/*
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML; 
+    var txt = str.replace("Microsoft","W3Schools");
+/*
+  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+
+function subways(special){
+  for(var i = 0; i < special.length; i++){
+    if(i%2 === 1){
+      special[i] = "Classic Tuna"; // you can also use: special.splice(i, 1, "Classic Tuna");
+    }
+  }
+return special;
+}
+
+subways(subOftheDay);
+console.log(subOftheDay);
+/*
+
+
 Final Boss
  * #20
  * Function - removeLetter
@@ -391,14 +638,37 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 
-  var phrase = "An apple a day keeps Alice feeling awesome!"
-  
+  var phrase = "An apple a day keeps Alice feeling awesome!";
+
+function removeLetter(str){
+  for (var i = 0; i < str.length; i++){
+    if (str[i] !== 'a' && str[i] !== "A"){
+      newArr.push(str[i]);
+    }
+  }
+  return newArr;
+}
+
+var newArr = [];
+console.log(removeLetter(phrase));
+
+/*  
+function removeLetter(str){
+  var newArr = [];
+  for(var i = 0; i < str.length; i++){
+    console.log(str[i]);
+    if(str[i] !== 'a' && str[i] !== "A"){
+      newArr.push(str[i]);
+    }
+  }
+console.log(newArr);
+return newArr;
+}
+
+removeLetter(phrase);
 
 
-
-
-
-
+*/
 
 
 
